@@ -29,8 +29,7 @@ Then rerun `npm install`
 For this example, I am using the `Time.elm` file, which comes from
 [here](https://github.com/cultureamp/react-elm-components/tree/master/example-elm0.19).
 
-- Copy the file into the `src` folder as `Clock.elm`
-- Update `Clock.elm` by changing the module name from "Main" to "Clock".
+- Copy the file into the `src` folder as `Main.elm` (to match the actual module name in the file)
 - Run in project root foler: `elm init`, which creates a default `elm.json` file. 
 - Update `elm.json` by runnnig: `elm install elm/time`:
 ```sh
@@ -40,12 +39,12 @@ Should I move it into "direct" dependencies for more general use? [Y/n]: Y
 Success!
 $ 
 ```
-- Compile `Clock.elm` into JavaScript by `elm make src/Clock.elm --output Clock.js`
+- Compile `Main.elm` into JavaScript by `elm make src/Main.elm --output src/Main.js`
 ```sh
-$ elm make src/Clock.elm --output src/Clock.js
+$ elm make src/Main.elm --output src/Main.js
 Success! Compiled 1 module.
 
-    Clock ───> src/Clock.js
+    Main ───> src/Main.js
 
 $ 
 ```
@@ -53,9 +52,9 @@ $
 At this point, the `src` folder will look like this:
 ```sh
 $ ls src
-App.css  App.test.js  Clock.js   index.js  reportWebVitals.js
-App.js   Clock.elm    index.css  logo.svg  setupTests.js
-$ 
+App.css  App.test.js  index.js  Main.elm  reportWebVitals.js
+App.js   index.css    logo.svg  Main.js   setupTests.js
+$  
 ```
 
 And the project root folder will two extra items:

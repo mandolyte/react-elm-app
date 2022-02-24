@@ -1,7 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 import Elm from "react-elm-components";
-import Clock from "./Clock";
+import Main from "./Main.elm";
 
 
 function App() {
@@ -12,7 +12,7 @@ function App() {
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
-        <Elm src={Clock.main} />
+        <Elm src={Main.elm.main} />
         <a
           className="App-link"
           href="https://reactjs.org"
