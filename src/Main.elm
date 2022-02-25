@@ -86,10 +86,10 @@ view model =
     in
     case Time.posixToMillis model.time of
         0 ->
-            h1 [] []
+            p [] []
 
         time ->
-            h1 [] [ text (hour ++ ":" ++ minute ++ ":" ++ second) ]
+            p [] [ text (hour ++ ":" ++ minute ++ ":" ++ second) ]
 
 
 timeToString : Int -> String
